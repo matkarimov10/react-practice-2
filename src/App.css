@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+.App {
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav {
+  display: flex;
+  margin: 0 auto 60px;
+  gap: 10px;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h1 {
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav a {
+  color: #333;
+  padding: 4px 10px;
+}
+nav a.active {
+  color: #0070f3;
+  font-weight: bold;
+  background-color: #eee; ;
+  border-radius: 4px;
 }
 
-.card {
-  padding: 2em;
+/* FORM */
+
+.form-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.form-control {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-control span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control input, textarea {
+  padding: 5px 8px;
+  font-family: inherit;
+  width: 100%;
+  resize: none;
+  font-size: 20px;
+}
+
+.button {
+  background:#848484;
+  border: 0;
+  padding: 8px 15px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.button:hover {
+  background:#848484d2;
 }
