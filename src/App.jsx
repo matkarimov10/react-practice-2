@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import {RootLayout} from "./layout/RootLayout.jsx";
 import {ContactLayout} from "./layout/ContactLayout.jsx";
+import {PageNotFound} from "./pages/PageNotFound.jsx";
 function App() {
     const routes = createBrowserRouter(
         createRoutesFromElements(
@@ -21,6 +22,7 @@ function App() {
                     <Route path="faq" element={<Faq/>}/>
                     <Route path="form" element={<Form/>}/>
                 </Route>
+                <Route path="*" element={<PageNotFound/>}/>
             </Route>
         )
     )
