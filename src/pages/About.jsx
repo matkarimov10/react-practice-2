@@ -1,4 +1,5 @@
 export function About() {
+    // console.log(ass)
   return (
     <div>
         <h1>About</h1>
